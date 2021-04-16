@@ -41,7 +41,7 @@ class About extends Component {
         />
       );
     };
-    if (this.props.partners) {
+    if (this.props.partners.isLoading) {
       return (
         <ScrollView>
           <Mission />
@@ -51,7 +51,7 @@ class About extends Component {
         </ScrollView>
       );
     }
-    if (this.props.parnters.errMess) {
+    if (this.props.partners.errMess) {
       return (
         <ScrollView>
           <Mission />
